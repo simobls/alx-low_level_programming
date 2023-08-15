@@ -16,7 +16,7 @@ while (i < 10)
 j = 0;
 while (j < 10)
 {
-n = i * j;
+n = 'i * j';
 _putchar(n);
 _putchar(',');
 _putchar(' ');
