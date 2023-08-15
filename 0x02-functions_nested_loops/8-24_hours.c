@@ -10,7 +10,7 @@
 
 void jack_bauer(void)
 {
-int htens, hones, mtens, mones, hmax, mmax;
+int htens, hones, mtens, mones, hmax;
 while (htens < 3)
 {
 hmax = 9;
