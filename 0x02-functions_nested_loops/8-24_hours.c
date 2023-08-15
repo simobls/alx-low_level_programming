@@ -6,7 +6,7 @@ void jack_bauer(void)
     while (htens < 3)
     {
         hmax = 9;
-        if (htens == 2)
+        if (htens = 2)
         {
             hmax = 3;
         }
