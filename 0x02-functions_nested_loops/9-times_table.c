@@ -24,6 +24,7 @@ if (n < 10)
 _putchar(n + '0');
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
 }
 else if (n > 10)
 {
