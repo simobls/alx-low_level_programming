@@ -8,12 +8,13 @@
 
 int _isupper(int c)
 {
-if (c >= 'A' && c <= 'Z')
+int i;
+for (i = 'A'; i < 'Z'; i++)
+{
+if (c == i)
 {
 return (1);
 }
-else if (c >= 'a' && c <= 'z')
-{
-return (0);
 }
+return (0);
 }
