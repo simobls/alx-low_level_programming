@@ -1,6 +1,4 @@
-#include <stdlib.h>
 #include "main.h"
-
 
 /**
  * print_rev - prints string backwards
@@ -8,19 +6,19 @@
  * Return: void
  */
 
-
 void print_rev(char *s)
 {
-	int i, j = 0, len;
-	char *rev;
+	int i = 0;
 
-
-	len = _strlen(s);
-	rev = (char*) malloc(len * sizeof(char));
-	for (i = len - 1; i >= 0; i--)
+	while (s[i] != '\0')
 	{
-		rev[j] = s[i];
-		j++;
+		i++;
 	}
-	_puts(rev);
+	i--;
+	while (i >= 0)
+	{
+		_putchar(s[i]);
+		i--;
+	}
+	_putchar('\n');
 }
