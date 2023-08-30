@@ -6,12 +6,12 @@
  * Return: No.
  */
 
-void _print_rev_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	while (*s != '\0')
 	{
 		_putchar(*s);
-		_print_rev_recursion(s + 1);
+		_puts_recursion(s + 1);
 	}
 	_putchar('\n');
 }
