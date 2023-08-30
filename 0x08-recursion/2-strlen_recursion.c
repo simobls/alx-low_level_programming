@@ -9,10 +9,11 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - size
- * @s: pointer to string params
- * Return: recursion
+ * @s: string to calculate the length of
+ *
+ * Return: length of the string
  */
+
 
 int _strlen_recursion(char *s)
 {
