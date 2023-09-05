@@ -16,12 +16,12 @@ char *str_concat(char *s1, char *s2)
 	int len1, len2;
 
 	if (s1 == NULL)
-		s1 == "";
+		s1 = "";
 	if (s2 == NULL)
-		s2 == "";
+		s2 = "";
 	len1 = strlen(s1);
 	len2 = strlen(s2);
-	strout = (char *)malloc(sizeof(char) * (i + j + 1));
+	strout = malloc(sizeof(char) * (len1 + len2 + 1));
 
 	if (strout == NULL)
 	{
@@ -29,7 +29,6 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 	strcpy(strout, s1);
-	strcat(char s1, " ");
-	strcat(char s1, s2);
+    strcat(strout, s2);
 	return (strout);
 }
