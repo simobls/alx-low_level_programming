@@ -6,15 +6,13 @@
  *
  * Return: no return.
  */
-
 void free_listint(listint_t *head)
 {
-	struct node* tmp;
+	listint_t *temp;
 
-	while (head != NULL)
-    {
-		tmp = head;
+	while ((temp = head) != NULL)
+	{
 		head = head->next;
-		free(tmp);
-    }
+		free(temp);
+	}
 }
