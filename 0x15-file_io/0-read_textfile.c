@@ -3,11 +3,19 @@
 #include <string.h>
 #include "main.h"
 
+/**
+ * read_textfile - reads a text file and prints the letters
+ * @filename: filename.
+ * @letters: numbers of letters printed.
+ *
+ * Return: numbers of letters printed. It fails, returns 0.
+ */
+
 size_t read_textfile(const char *filename, size_t letters)
 {
 	int fp;
 	size_t nread, nwrite;
-	char* ptr;
+	char *ptr;
 
 	if (!filename)
 		return (0);
